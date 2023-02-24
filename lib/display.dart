@@ -21,7 +21,7 @@ class _DisplayState extends State<Display> {
   Stream<List<dynamic>> _fetchData() async* {
     while (true) {
       final response = await http.get(Uri.parse(
-          'https://flutter-backend-api-63aa6-default-rtdb.firebaseio.com/products.json'));
+          'https://flutter-backend-xxx-xxxxx-default-rtdb.firebaseio.com/products.json'));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body) as Map<String, dynamic>;
