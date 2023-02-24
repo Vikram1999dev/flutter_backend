@@ -14,7 +14,7 @@ class _InputState extends State<Input> {
   Future<void>? _sendData() async {
     FocusScope.of(context).unfocus();
     final url = Uri.parse(
-        'https://flutter-backend-api-63aa6-default-rtdb.firebaseio.com/products.json');
+        'https://flutter-backend-xxx-xxxxx-default-rtdb.firebaseio.com/products.json');
     final formState = _formKey.currentState;
 
     if (formState != null && formState.validate()) {
